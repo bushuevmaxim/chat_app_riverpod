@@ -1,4 +1,5 @@
 import 'package:chat_app/main.dart';
+import 'package:chat_app/src/theme/app_strings.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:message_service/message_service.dart';
 
@@ -10,7 +11,7 @@ final class Message {
 }
 
 List<Message> messages = <Message>[
-  Message(text: 'Hello, how can I help you?', isLocalUser: false),
+  Message(text: AppStrings.greet, isLocalUser: false),
 ];
 
 final class MessageList extends Notifier<List<Message>> {

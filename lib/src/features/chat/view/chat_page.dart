@@ -5,6 +5,7 @@ import 'package:chat_app/src/features/chat/models/message.dart';
 import 'package:chat_app/src/features/chat/view/widgets/input_field.dart';
 import 'package:chat_app/src/features/chat/view/widgets/message.dart';
 import 'package:chat_app/src/theme/app_colors.dart';
+import 'package:chat_app/src/theme/app_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -30,7 +31,7 @@ class ChatPage extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Chat app'),
+        title: const Text(AppStrings.title),
         backgroundColor: AppColors.backgroundColor,
       ),
       backgroundColor: AppColors.backgroundColor,

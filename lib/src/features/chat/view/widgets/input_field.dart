@@ -1,3 +1,4 @@
+import 'package:chat_app/src/theme/app_strings.dart';
 import 'package:flutter/material.dart';
 
 import 'package:chat_app/src/theme/app_colors.dart';
@@ -36,7 +37,7 @@ class InputField extends StatelessWidget {
                     color: AppColors.secondaryColor, fontSize: 16),
                 decoration: const InputDecoration(
                     hintStyle: TextStyle(color: AppColors.secondaryColor),
-                    hintText: 'How can I help you?',
+                    hintText: AppStrings.hint,
                     border: InputBorder.none),
               ),
             )),
